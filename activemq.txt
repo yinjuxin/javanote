@@ -1,0 +1,12 @@
+
+activemq start/stop 开启/关闭服务
+
+不会可以看帮助 activemq producer -？（--help）
+
+activemq producer --message "传输的文本内容" --messageCount 3（传输的次数） --destination queue(topic)://队列（主题）名字
+	回车后，就会发送，发送完就结束
+	--destination 如果不写，默认queue://TEST
+	
+activemq consumer 【--destination queue(topic)://队列（主题）名字】
+	回车后一直消费，不手动终端不会结束
+	ctrl + C刷新消息，若没有消息可以中断运行
